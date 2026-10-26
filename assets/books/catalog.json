@@ -1,0 +1,56 @@
+[
+  {
+    "id": "zk",
+    "name": "中考",
+    "count": 1600,
+    "source": "ECDICT 考试标签整理 · 非官方考纲词表"
+  },
+  {
+    "id": "gk",
+    "name": "高考",
+    "count": 3674,
+    "source": "ECDICT 考试标签整理 · 非官方考纲词表"
+  },
+  {
+    "id": "cet4",
+    "name": "大学四级",
+    "count": 3846,
+    "source": "ECDICT 考试标签整理 · 非官方考纲词表"
+  },
+  {
+    "id": "cet6",
+    "name": "大学六级",
+    "count": 5406,
+    "source": "ECDICT 考试标签整理 · 非官方考纲词表"
+  },
+  {
+    "id": "ky",
+    "name": "考研",
+    "count": 4801,
+    "source": "ECDICT 考试标签整理 · 非官方考纲词表"
+  },
+  {
+    "id": "ielts",
+    "name": "雅思",
+    "count": 5038,
+    "source": "ECDICT 考试标签整理 · 非官方考纲词表"
+  },
+  {
+    "id": "toefl",
+    "name": "托福",
+    "count": 6970,
+    "source": "ECDICT 考试标签整理 · 非官方考纲词表"
+  },
+  {
+    "id": "gre",
+    "name": "GRE",
+    "count": 7504,
+    "source": "ECDICT 考试标签整理 · 非官方考纲词表"
+  },
+  {
+    "id": "academic",
+    "name": "学术阅读基础",
+    "count": 49,
+    "source": "PaperWords 整理 · ECDICT 释义"
+  }
+]

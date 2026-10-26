@@ -1,0 +1,31 @@
+# Installed dependencies and local caches
+node_modules/
+.npm-cache/
+.electron-cache/
+.builder-cache/
+
+# Personal documents, notes, vocabulary, credentials and browser profiles
+data/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+
+# Build output, local fixtures, screenshots and development experiments
+release/
+work/
+coverage/
+test-results/
+playwright-report/
+*.log
+smoke-result.json
+
+# Local editor and assistant configuration
+.idea/
+.vscode/
+.codex/
+.agents/
+Thumbs.db
+.DS_Store

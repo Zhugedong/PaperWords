@@ -1,0 +1,19 @@
+select{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--border);border-radius:7px;padding:9px;max-width:100%;color-scheme:inherit}
+select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.domainBox{padding:10px 20px 12px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);flex-shrink:0}
+.domainHeading{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}
+.domainHeading button{padding:4px;font-size:11px}
+.domainBox select{width:100%;margin-top:7px}
+.domainBox p{font-size:10px;line-height:1.6;margin:7px 0 0;overflow-wrap:anywhere}
+.assistanthead{flex-shrink:0}.tabs{flex-shrink:0}
+.bookToolbar{display:flex;align-items:end;flex-wrap:wrap;gap:10px}
+.bookToolbar label{display:grid;gap:8px;flex:1;min-width:160px}
+.bookToolbar select{width:100%}
+#bookLibrary>input{width:100%;margin:12px 0}
+.bookRow{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.bookRow>div{flex:1;min-width:0}.bookRow strong{font-size:15px}.bookRow p{margin:5px 0 0;line-height:1.7;font-size:12px;color:var(--muted);overflow-wrap:anywhere;white-space:pre-line}
+.bookRow small{display:block;color:var(--muted);margin-top:5px}
+.bookPagination{display:flex;align-items:center;justify-content:center;gap:18px;margin:24px 0}
+#bookStudy h3{font-size:26px}#bookStudy .studyMeaning{white-space:pre-line;line-height:1.8;margin:18px 0}
+#bookStudy .actions{flex-wrap:wrap}#bookProgress{color:var(--accent);line-height:1.7}
+@media(max-height:780px){.assistanthead{height:65px;padding:12px 20px}.domainBox{padding:7px 16px}.panel{padding-top:14px}}

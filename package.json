@@ -1,0 +1,49 @@
+{
+  "name": "paperwords",
+  "version": "0.3.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/build.ps1"
+  },
+  "devDependencies": {
+    "electron": "^40.0.0",
+    "electron-builder": "^26.0.0",
+    "playwright": "^1.64.1"
+  },
+  "build": {
+    "appId": "local.paperwords",
+    "productName": "PaperWords",
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "app.js",
+      "style.css",
+      "assets/**",
+      "dictionary.js",
+      "dark.css",
+      "theme.js",
+      "themes.css",
+      "themes/**",
+      "academic.cjs",
+      "academic-ui.js",
+      "books.js",
+      "features.css"
+    ],
+    "electronDist": "node_modules/electron/dist",
+    "asar": false,
+    "artifactName": "PaperWords.exe"
+  },
+  "dependencies": {
+    "pdfjs-dist": "5.4.624",
+    "tesseract.js": "^7.0.0"
+  }
+}
