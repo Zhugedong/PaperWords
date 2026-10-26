@@ -33,7 +33,11 @@ export async function identifyPaper(p,document){
  }catch(e){if(request===serial)$('domainStatus').textContent='自动识别暂不可用，可手动选择。'+e.message}
 }
 export function academicOptions(active,text,mode='translate'){
- const full=Array.from($('textLayer').querySelectorAll('span')).map(span=>span.textContent).join(' ').replace(/\s+/g,' ');
+ const selection=window.getSelection();
+ const start=selection&&!selection.isCollapsed?selection.getRangeAt(0).startContainer:null;
+ const selectedPage=(start?.nodeType===Node.ELEMENT_NODE?start:start?.parentElement)?.closest('.page[data-page-number]');
+ const scope=selectedPage||document.querySelector('#textLayer .page[data-page-number="'+$('pageNum').value+'"]')||$('textLayer');
+ const full=Array.from(scope.querySelectorAll('.textLayer span')).map(span=>span.textContent).join(' ').replace(/\s+/g,' ');
  const index=full.indexOf(text);
  const context=index<0?full.slice(0,5000):full.slice(Math.max(0,index-1800),index+text.length+1800);
  return {base:$('base').value.trim(),key:$('key').value.trim(),model:$('model').value.trim(),text,domain:active?.domain||'general',title:active?.title||'',background:active?.background||'',context:active?context:'',mode};

@@ -36,7 +36,9 @@
       "academic.cjs",
       "academic-ui.js",
       "books.js",
-      "features.css"
+      "features.css",
+      "translation.js",
+      "continuous-reader.js"
     ],
     "electronDist": "node_modules/electron/dist",
     "asar": false,
